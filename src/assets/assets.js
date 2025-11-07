@@ -1,4 +1,4 @@
-import logo from './logo.svg'
+import logo from './logo.png'
 import arrow_icon from './arrow_icon.svg'
 import group_profile from './group_profile.png'
 import bgImage1 from './bgImage1.png'
@@ -23,12 +23,38 @@ import facebook_icon from './facebook_icon.svg'
 import twitter_icon from './twitter_icon.svg'
 import instagram_icon from './instagram_icon.svg'
 import linkedin_icon from './linkedin_icon.svg'
-import logo_dark from './logo_dark.svg'
+import logo_dark from './logo_dark.png'
 import airbnb_logo from './airbnb_logo.svg'
 import google_logo from './google_logo.svg'
 import menu_icon_dark from './menu_icon_dark.svg'
 import sun_icon from './sun_icon.svg'
 import moon_icon from './moon_icon.svg'
+// Project images
+import sprintiq from './SprintIQ.png'
+import loyalai from './LoyalAI.png'
+import ragcanvas from './RAGcanvas.png'
+import fiscalai from './FiscalAI.png'
+import easysuite from './easysuite.png'
+import userlens from './UserLens.png'
+import xpectrum from './xpectrum.png'
+import gencraft from './Qencraft.png'
+import appmixer from './appmixer.png'
+import copysmith from './copysmith.png'
+import tryring from './tryring.png'
+import myinfinite from './myinfinite.png'
+import pinecall from './pinecall.png'
+import stashbee from './stashbee.png'
+import gitwik from './gitwik.png'
+import gluonerp from './gluonerp.png'
+import golodger from './golodger.png'
+import globalvoicedirect from './globalvoicedirect.png'
+import knowland from './knowland.png'
+import doctyme from './doctyme.png'
+import accessexperts247 from './accessexperts247.png'
+import sportunity from './sportunity.png'
+import hotelspider from './hotel-spider.png'
+import isluxury from './isluxury.png'
+import pabau from './pabau.png'
 
 
 export const company_logos = [
@@ -65,7 +91,33 @@ const assets = {
   logo_dark,
   menu_icon_dark,
   sun_icon,
-  moon_icon
+  moon_icon,
+  // Project images
+  sprintiq,
+  loyalai,
+  ragcanvas,
+  fiscalai,
+  easysuite,
+  userlens,
+  xpectrum,
+  gencraft,
+  appmixer,
+  copysmith,
+  tryring,
+  myinfinite,
+  pinecall,
+  stashbee,
+  gitwik,
+  gluonerp,
+  golodger,
+  globalvoicedirect,
+  knowland,
+  doctyme,
+  accessexperts247,
+  sportunity,
+  hotelspider,
+  isluxury,
+  pabau
 }
 
 export default assets

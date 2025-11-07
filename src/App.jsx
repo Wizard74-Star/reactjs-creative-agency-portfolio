@@ -1,13 +1,11 @@
-import { useEffect, useRef, useState } from "react";
-import { Toaster } from "react-hot-toast";
-import ContactUs from "./components/ContactUs";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
-import OurWork from "./components/OurWork";
-import Services from "./components/Services";
-import Teams from "./components/Teams";
-import TrustedBy from "./components/TrustedBy";
+import { useEffect, useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import Stacks from "./pages/Stacks";
+import StackDetail from "./pages/StackDetail";
+import CategoryPage from "./pages/CategoryPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   const [theme, setTheme] = useState('light');
@@ -23,53 +21,28 @@ const App = () => {
     }
   }, []);
 
-  const dotRef = useRef(null);
-  const outlineRef = useRef(null);
-
-  // custom cursor positio 
-  const mouse = useRef({ x: 0, y: 0 });
-  const position = useRef({ x: 0, y: 0 });
-
+  // Apply theme to document
   useEffect(() => {
-    const handleMouseMove = (e) => {
-      mouse.current.x = e.clientX
-      mouse.current.y = e.clientY
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
     }
-    document.addEventListener('mousemove', handleMouseMove)
-    const animate = () => {
-      position.current.x += (mouse.current.x - position.current.x) * 0.1
-      position.current.y += (mouse.current.y - position.current.y) * 0.1
-
-      if (dotRef.current && outlineRef.current) {
-        dotRef.current.style.transform = `translate3d(${mouse.current.x - 6}px, ${mouse.current.y - 6}px, 0)`
-
-        outlineRef.current.style.transform = `translate3d(${position.current.x - 20}px, ${position.current.y - 20}px, 0)`
-      }
-      requestAnimationFrame(animate)
-    }
-    animate()
-    return () => {
-      document.removeEventListener('mousemove', handleMouseMove)
-    }
-  }, [])
+  }, [theme]);
 
   return (
-    <div className="dark:bg-black relative">
-      <Toaster />
-      <Navbar theme={theme} setTheme={setTheme} />
-      <Hero />
-      <TrustedBy />
-      <Services />
-      <OurWork />
-      <Teams />
-      <ContactUs />
-      <Footer theme={theme} />
-
-      {/* Custom cursor ring */}
-      <div ref={outlineRef} className="fixed top-0 left-0 h-10 w-10 rounded-full border border-primary pointer-events-none z-[9999]" style={{transition: 'transform 0.1s ease-out'}}></div>
-      {/* Custom cursor dot */}
-      <div ref={dotRef} className="fixed top-0 left-0 h-3 w-3 rounded-full bg-primary pointer-events-none z-[9999]" style={{transition: 'transform 0.1s ease-out'}}></div>
-    </div>
+    <Router>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Home theme={theme} setTheme={setTheme} />} />
+        <Route path="/projects" element={<Projects theme={theme} setTheme={setTheme} />} />
+        <Route path="/stacks" element={<Stacks theme={theme} setTheme={setTheme} />} />
+        <Route path="/stacks/:stackId" element={<StackDetail theme={theme} setTheme={setTheme} />} />
+        <Route path="/category/:category" element={<CategoryPage theme={theme} setTheme={setTheme} />} />
+      </Routes>
+    </Router>
   );
 };
 
