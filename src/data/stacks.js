@@ -6,7 +6,7 @@ export const stacks = [
     category: 'Frontend',
     description: 'A powerful JavaScript library for building interactive user interfaces. We use React to create component-based, reusable UI elements that deliver fast, responsive experiences across web and mobile platforms.',
     color: '#61DAFB',
-    projects: [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 18, 19, 20, 21, 23, 25]
+    projects: [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 13, 14, 15, 17, 18, 19, 20, 21, 26]
   },
   {
     id: 'next',
@@ -56,6 +56,22 @@ export const stacks = [
     color: '#000000',
     projects: []
   },
+  {
+    id: 'bubble',
+    name: 'Bubble.io',
+    category: 'Frontend',
+    description: 'No-code platform for building web applications visually. Bubble.io enables rapid development of complex web apps without writing code, with powerful database, API, and workflow capabilities.',
+    color: '#E61E4D',
+    projects: []
+  },
+  {
+    id: 'figma',
+    name: 'Figma',
+    category: 'Frontend',
+    description: 'Collaborative design tool for creating user interfaces, prototypes, and design systems. Figma enables design-to-code workflows and seamless collaboration between designers and developers.',
+    color: '#F24E1E',
+    projects: []
+  },
   
   // Styling & UI
   {
@@ -64,7 +80,7 @@ export const stacks = [
     category: 'Frontend',
     description: 'Utility-first CSS framework for rapidly building custom user interfaces. Tailwind provides low-level utility classes to build complex designs without leaving HTML.',
     color: '#06B6D4',
-    projects: [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 18, 19, 20, 21, 23, 25]
+    projects: [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 13, 14, 15, 17, 18, 19, 20, 21, 26]
   },
   {
     id: 'bootstrap',
@@ -98,7 +114,7 @@ export const stacks = [
     category: 'Backend',
     description: 'JavaScript runtime built on Chrome\'s V8 engine. We leverage Node.js to build scalable, high-performance server-side applications and APIs that power real-time features and microservices.',
     color: '#339933',
-    projects: [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 18, 19, 20, 21, 23, 25]
+    projects: [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 13, 14, 15, 17, 18, 19, 20, 21, 26]
   },
   {
     id: 'express',
@@ -141,6 +157,46 @@ export const stacks = [
     projects: []
   },
   {
+    id: 'fastapi',
+    name: 'FastAPI',
+    category: 'Backend',
+    description: 'Modern, fast web framework for building APIs with Python based on standard Python type hints. FastAPI provides automatic API documentation, high performance, and easy-to-use features.',
+    color: '#009688',
+    projects: []
+  },
+  {
+    id: 'aspnet',
+    name: '.NET / ASP.NET',
+    category: 'Backend',
+    description: 'Microsoft\'s web application framework for building modern web applications and APIs. ASP.NET provides a unified platform for building web apps with C# and .NET.',
+    color: '#512BD4',
+    projects: []
+  },
+  {
+    id: 'wordpress',
+    name: 'WordPress',
+    category: 'Backend',
+    description: 'Popular content management system and website builder. WordPress powers millions of websites with its flexible plugin architecture, themes, and extensive customization options.',
+    color: '#21759B',
+    projects: []
+  },
+  {
+    id: 'crm',
+    name: 'CRM',
+    category: 'Backend',
+    description: 'Customer Relationship Management systems for managing customer interactions, sales pipelines, and business relationships. CRM platforms help businesses track leads, manage contacts, and automate sales processes.',
+    color: '#4A90E2',
+    projects: []
+  },
+  {
+    id: 'ecommerce',
+    name: 'E-commerce',
+    category: 'Backend',
+    description: 'E-commerce platforms and solutions for building online stores and marketplaces. E-commerce systems provide product management, shopping carts, payment processing, and order fulfillment capabilities.',
+    color: '#FF6B35',
+    projects: []
+  },
+  {
     id: 'laravel',
     name: 'Laravel',
     category: 'Backend',
@@ -172,7 +228,7 @@ export const stacks = [
     category: 'Database',
     description: 'Advanced open-source relational database. PostgreSQL provides ACID compliance, JSON support, and powerful querying capabilities for complex data requirements.',
     color: '#336791',
-    projects: [1, 2, 13, 15, 18, 20, 21, 23, 25]
+    projects: [1, 2, 13, 15, 18, 20, 21, 26]
   },
   {
     id: 'mysql',
@@ -214,6 +270,14 @@ export const stacks = [
     color: '#1287B1',
     projects: []
   },
+  {
+    id: 'sql-server',
+    name: 'SQL Server',
+    category: 'Database',
+    description: 'Microsoft\'s relational database management system. SQL Server provides enterprise-grade data management, analytics, and business intelligence capabilities for mission-critical applications.',
+    color: '#CC2927',
+    projects: []
+  },
   
   // Mobile Development
   {
@@ -222,7 +286,7 @@ export const stacks = [
     category: 'Mobile',
     description: 'Framework for building native mobile apps using React. We create cross-platform iOS and Android applications with a single codebase, delivering native performance and user experience.',
     color: '#61DAFB',
-    projects: [14, 20]
+    projects: [14, 20, 29]
   },
   {
     id: 'flutter',
@@ -256,6 +320,14 @@ export const stacks = [
     color: '#3880FF',
     projects: []
   },
+  {
+    id: 'ios',
+    name: 'iOS',
+    category: 'Mobile',
+    description: 'Apple\'s mobile operating system for iPhone and iPad devices. iOS development enables us to create native applications with Swift and Objective-C, delivering optimized performance and seamless user experiences.',
+    color: '#000000',
+    projects: [29]
+  },
   
   // Blockchain
   {
@@ -264,7 +336,7 @@ export const stacks = [
     category: 'Blockchain',
     description: 'Programming language for writing smart contracts on Ethereum and other blockchain platforms. We develop secure, audited smart contracts for DeFi, NFTs, and decentralized applications.',
     color: '#363636',
-    projects: []
+    projects: [27, 28]
   },
   {
     id: 'truffle',
@@ -288,7 +360,7 @@ export const stacks = [
     category: 'Blockchain',
     description: 'JavaScript library for interacting with Ethereum blockchain. Web3.js enables us to connect applications to blockchain networks, interact with smart contracts, and manage wallets.',
     color: '#F16822',
-    projects: [19, 20]
+    projects: [19, 20, 27, 28]
   },
   {
     id: 'ethers',
@@ -296,7 +368,7 @@ export const stacks = [
     category: 'Blockchain',
     description: 'Complete Ethereum library for JavaScript. Ethers.js offers a clean, simple API for interacting with Ethereum blockchain and smart contracts.',
     color: '#3C3C3D',
-    projects: [17, 20]
+    projects: [17, 20, 27, 28]
   },
   {
     id: 'ipfs',
@@ -330,7 +402,7 @@ export const stacks = [
     category: 'Language',
     description: 'Versatile programming language for AI, automation, and backend development. Python\'s extensive libraries make it ideal for machine learning, data processing, and API development.',
     color: '#3776AB',
-    projects: [1, 2, 4, 5, 7, 8, 9, 10, 11, 12]
+    projects: [1, 2, 4, 5, 7, 8, 9, 10, 11]
   },
   {
     id: 'tensorflow',
@@ -356,6 +428,46 @@ export const stacks = [
     color: '#000000',
     projects: [9]
   },
+  {
+    id: 'rag-systems',
+    name: 'RAG Systems',
+    category: 'AI',
+    description: 'Retrieval-Augmented Generation systems that combine information retrieval with language models. RAG systems enable AI applications to access and use external knowledge bases for more accurate and context-aware responses.',
+    color: '#6366F1',
+    projects: []
+  },
+  {
+    id: 'lindy-ai',
+    name: 'Lindy.ai',
+    category: 'AI',
+    description: 'AI automation platform that helps businesses automate workflows and processes using artificial intelligence. Lindy.ai enables intelligent task automation and process optimization.',
+    color: '#8B5CF6',
+    projects: []
+  },
+  {
+    id: 'botpress',
+    name: 'BotPress',
+    category: 'AI',
+    description: 'Open-source conversational AI platform for building chatbots and virtual assistants. BotPress provides tools for creating, deploying, and managing intelligent conversational interfaces.',
+    color: '#20B2AA',
+    projects: []
+  },
+  {
+    id: 'lovable',
+    name: 'Lovable',
+    category: 'AI',
+    description: 'AI-powered development platform that accelerates web application creation. Lovable uses AI to generate, iterate, and deploy applications with natural language instructions.',
+    color: '#FF6B6B',
+    projects: []
+  },
+  {
+    id: 'chatgpt',
+    name: 'ChatGPT',
+    category: 'AI',
+    description: 'Advanced AI language model developed by OpenAI. ChatGPT enables natural language understanding, conversation, content generation, and intelligent automation across various applications.',
+    color: '#10A37F',
+    projects: []
+  },
   
   // Automation & Tools
   {
@@ -374,6 +486,46 @@ export const stacks = [
     color: '#FF4A00',
     projects: []
   },
+  {
+    id: 'make',
+    name: 'Make.com',
+    category: 'Automation',
+    description: 'Visual automation platform that connects apps and services to automate workflows. Make.com enables complex automation scenarios with a visual interface and powerful integration capabilities.',
+    color: '#00C896',
+    projects: []
+  },
+  {
+    id: 'autodesk',
+    name: 'AutoDesk',
+    category: 'Automation',
+    description: 'Design and engineering software platform providing tools for 3D design, modeling, and automation. AutoDesk offers APIs and integrations for automating design workflows and processes.',
+    color: '#0696D7',
+    projects: []
+  },
+  {
+    id: 'monday',
+    name: 'Monday.com',
+    category: 'Automation',
+    description: 'Work operating system that powers teams to run projects and workflows with confidence. Monday.com provides project management, automation, and collaboration tools for teams of all sizes.',
+    color: '#FF3D57',
+    projects: []
+  },
+  {
+    id: 'zoho',
+    name: 'Zoho',
+    category: 'Automation',
+    description: 'Comprehensive suite of business applications including CRM, email, office suite, and automation tools. Zoho enables businesses to manage operations, automate workflows, and integrate various business processes.',
+    color: '#C8202F',
+    projects: []
+  },
+  {
+    id: 'ghl',
+    name: 'GHL',
+    category: 'Automation',
+    description: 'GoHighLevel all-in-one marketing and sales platform for agencies and businesses. GHL provides CRM, automation, funnels, SMS, email marketing, and appointment scheduling in one platform.',
+    color: '#00A4FF',
+    projects: []
+  },
   
   // Cloud & DevOps
   {
@@ -382,7 +534,7 @@ export const stacks = [
     category: 'Cloud',
     description: 'Amazon Web Services cloud computing platform. We leverage AWS for scalable infrastructure, storage, and services that power enterprise-grade applications.',
     color: '#FF9900',
-    projects: [1, 2, 12]
+    projects: [1, 2]
   },
   {
     id: 'docker',
@@ -458,6 +610,22 @@ export const stacks = [
     color: '#311C87',
     projects: []
   },
+  {
+    id: 'webrtc',
+    name: 'WebRTC',
+    category: 'Backend',
+    description: 'Real-time communication protocol that enables peer-to-peer audio, video, and data sharing directly between browsers and devices. We use WebRTC to build video conferencing, voice calling, and real-time collaboration features without plugins.',
+    color: '#333333',
+    projects: [10, 11]
+  },
+  {
+    id: 'websockets',
+    name: 'WebSockets',
+    category: 'Backend',
+    description: 'Communication protocol that provides full-duplex communication channels over a single TCP connection. WebSockets enable real-time, bidirectional data exchange between client and server for live updates and interactive features.',
+    color: '#010101',
+    projects: []
+  },
   
   // Payment & E-commerce
   {
@@ -492,7 +660,7 @@ export const stacks = [
     category: 'Language',
     description: 'High-level programming language that is one of the core technologies of the World Wide Web. JavaScript enables interactive web pages and is essential for web development.',
     color: '#F7DF1E',
-    projects: [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 18, 19, 20, 21, 23, 25]
+    projects: [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 13, 14, 15, 17, 18, 19, 20, 21, 26]
   },
   {
     id: 'go',
@@ -526,6 +694,14 @@ export const stacks = [
     color: '#777BB4',
     projects: []
   },
+  {
+    id: 'csharp',
+    name: 'C#',
+    category: 'Language',
+    description: 'Modern, object-oriented programming language developed by Microsoft. C# is widely used for building Windows applications, web services, and enterprise software with the .NET framework.',
+    color: '#239120',
+    projects: []
+  },
   
   // Testing & Quality
   {
@@ -550,6 +726,14 @@ export const stacks = [
     category: 'Testing',
     description: 'End-to-end testing framework for web applications. Playwright enables reliable end-to-end testing for modern web apps across all browsers.',
     color: '#45BA4B',
+    projects: []
+  },
+  {
+    id: 'puppeteer',
+    name: 'Puppeteer',
+    category: 'Testing',
+    description: 'Node.js library for controlling headless Chrome or Chromium browsers. Puppeteer enables automated testing, web scraping, and browser automation with a high-level API.',
+    color: '#40B5A4',
     projects: []
   }
 ];

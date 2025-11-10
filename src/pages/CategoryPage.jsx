@@ -18,14 +18,6 @@ const categoryConfig = {
     color: '#6366F1',
     icon: '🚀'
   },
-  'Web Application': {
-    title: 'Web Applications',
-    subtitle: 'Powerful & Responsive Web Solutions',
-    description: 'Creating modern web applications with cutting-edge technologies, responsive design, and exceptional user experiences.',
-    gradient: 'from-cyan-500 via-blue-500 to-indigo-600',
-    color: '#3B82F6',
-    icon: '🌐'
-  },
   'Mobile App': {
     title: 'Mobile Applications',
     subtitle: 'Native & Cross-Platform Excellence',
@@ -65,7 +57,10 @@ const CategoryPage = ({ theme, setTheme }) => {
   // Properly decode the category name from URL (handles forward slashes and special characters)
   const decodedCategory = decodeCategoryFromURL(category);
   const config = categoryConfig[decodedCategory] || categoryConfig['Full-Stack'];
-  const categoryProjects = projects.filter(p => p.category === decodedCategory);
+  const categoryProjects = projects.filter(p => {
+    const categories = Array.isArray(p.category) ? p.category : [p.category];
+    return categories.includes(decodedCategory);
+  });
   
   // Get unique stacks used in category projects
   const usedStackNames = new Set();
@@ -271,16 +266,14 @@ const CategoryPage = ({ theme, setTheme }) => {
               whileHover={{ scale: 1.1, y: -10 }}
               className="group"
             >
-              <Link to={`/stacks/${stack.id}`}>
-                <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700 group-hover:border-primary">
-                  <div className="flex flex-col items-center gap-4">
-                    <StackIcon stack={stack} size={60} />
-                    <h3 className="text-sm font-semibold text-gray-900 dark:text-white text-center">
-                      {stack.name}
-                    </h3>
-                  </div>
+              <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700 group-hover:border-primary">
+                <div className="flex flex-col items-center gap-4">
+                  <StackIcon stack={stack} size={60} />
+                  <h3 className="text-sm font-semibold text-gray-900 dark:text-white text-center">
+                    {stack.name}
+                  </h3>
                 </div>
-              </Link>
+              </div>
             </motion.div>
           ))}
         </div>

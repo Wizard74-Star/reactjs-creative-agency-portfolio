@@ -48,7 +48,10 @@ const Projects = ({ theme, setTheme }) => {
 
   const filteredProjects = selectedCategory === 'All Projects' 
     ? projects 
-    : projects.filter(project => project.category === selectedCategory);
+    : projects.filter(project => {
+        const categories = Array.isArray(project.category) ? project.category : [project.category];
+        return categories.includes(selectedCategory);
+      });
 
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);

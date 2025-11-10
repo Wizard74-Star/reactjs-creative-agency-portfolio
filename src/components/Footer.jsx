@@ -1,33 +1,7 @@
 import { motion } from "motion/react";
-import toast from "react-hot-toast";
 import assets from "../assets/assets";
 
 const Footer = ({ theme }) => {
-
-    const onSubmit = async (event) => {
-        event.preventDefault();
-        const formData = new FormData(event.target);
-        formData.append("access_key", "bbd4d7fa-ffaa-4bfe-9182-4b63a804d524");
-        formData.append("subject", "New Newsletter Subscription");
-
-        try {
-            const response = await fetch("https://api.web3forms.com/submit", {
-                method: "POST",
-                body: formData
-            });
-
-            const data = await response.json();
-
-            if (data.success) {
-                toast.success('🎉 Thank you for subscribing!');
-                event.target.reset();
-            } else {
-                toast.error(data.message || "Something went wrong");
-            }
-        } catch (error) {
-            toast.error(error.message);
-        }
-    };
 
     return (
         <motion.div
@@ -52,33 +26,6 @@ const Footer = ({ theme }) => {
                         <li><a href="#our-work" className="hover:text-primary">Our Work</a></li>
                         <li><a href="#contact-us" className="hover:text-primary">Contact Us</a></li>
                     </ul>
-                </motion.div>
-
-                <motion.div
-                    initial={{ opacity: 0, x: 30 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.6, delay: 0.3 }}
-                    viewport={{ once: true }}
-                    className="text-gray-600 dark:text-gray-400">
-                    <h3 className="font-semibold">Subscribe to Our Newsletter</h3>
-                    <p className="text-sm mt-2 mb-6">Stay updated with the latest trends, articles, and resources from our digital team.</p>
-
-                    {/* ✅ Subscription Form */}
-                    <form onSubmit={onSubmit} className="flex gap-2 text-sm">
-                        <input
-                            type="email"
-                            name="email"
-                            placeholder="Enter your email"
-                            className="w-full p-3 text-sm outline-none rounded dark:text-gray-200 bg-transparent border border-gray-300 dark:border-gray-500"
-                            required
-                        />
-                        <button
-                            type="submit"
-                            className="bg-primary text-white rounded px-6 hover:scale-105 transition-transform"
-                        >
-                            Subscribe
-                        </button>
-                    </form>
                 </motion.div>
             </div>
 

@@ -83,9 +83,6 @@ const StackDetail = ({ theme, setTheme }) => {
               <span className="px-4 py-2 bg-primary/10 text-primary rounded-full">
                 {stack.category}
               </span>
-              <span className="px-4 py-2 bg-gray-200 dark:bg-gray-800 rounded-full">
-                {stackProjects.length} Projects
-              </span>
             </div>
           </div>
         </motion.div>

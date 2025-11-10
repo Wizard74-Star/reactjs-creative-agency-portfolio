@@ -14,12 +14,6 @@ const Services = () => {
             icon: assets.ads_icon,
         },
         {
-            title: "Web Application",
-            description:
-                "We create powerful web applications with responsive design, real-time features, and seamless user experiences across all devices and browsers.",
-            icon: assets.ads_icon,
-        },
-        {
             title: "Mobile App Development",
             description:
                 "We develop native and cross-platform mobile applications using React Native and Flutter, delivering high-performance apps for iOS and Android.",
@@ -78,7 +72,6 @@ const Services = () => {
             <div className="mt-16 grid grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl">
                 {[
                     { name: 'Full-Stack', icon: '🚀', gradient: 'from-blue-600 via-purple-600 to-pink-600', path: '/category/Full-Stack' },
-                    { name: 'Web Application', icon: '🌐', gradient: 'from-cyan-500 via-blue-500 to-indigo-600', path: '/category/Web Application' },
                     { name: 'Mobile App', icon: '📱', gradient: 'from-green-500 via-emerald-500 to-teal-600', path: '/category/Mobile App' },
                     { name: 'Blockchain', icon: '⛓️', gradient: 'from-yellow-500 via-orange-500 to-red-600', path: '/category/Blockchain' },
                     { name: 'AI Automation', icon: '🤖', gradient: 'from-purple-500 via-pink-500 to-rose-600', path: '/category/AI Automation' },

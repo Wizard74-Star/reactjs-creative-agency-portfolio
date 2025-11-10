@@ -11,6 +11,8 @@ const StackIcon = ({ stack, size = 80, className = "" }) => {
     'svelte': 'siSvelte',
     'nuxt': 'siNuxtdotjs',
     'remix': 'siRemix',
+    'bubble': 'siBubble',
+    'figma': 'siFigma',
     'tailwind': 'siTailwindcss',
     'bootstrap': 'siBootstrap',
     'material-ui': 'siMui',
@@ -21,11 +23,17 @@ const StackIcon = ({ stack, size = 80, className = "" }) => {
     'fastify': 'siFastify',
     'django': 'siDjango',
     'flask': 'siFlask',
+    'fastapi': 'siFastapi',
+    'aspnet': 'siDotnet',
+    'wordpress': 'siWordpress',
+    'crm': null, // Custom icon needed
+    'ecommerce': null, // Custom icon needed
     'laravel': 'siLaravel',
     'spring': 'siSpring',
     'mongodb': 'siMongodb',
     'postgresql': 'siPostgresql',
     'mysql': 'siMysql',
+    'sql-server': 'siMicrosoftsqlserver',
     'redis': 'siRedis',
     'prisma': 'siPrisma',
     'supabase': 'siSupabase',
@@ -35,6 +43,7 @@ const StackIcon = ({ stack, size = 80, className = "" }) => {
     'swift': 'siSwift',
     'kotlin': 'siKotlin',
     'ionic': 'siIonic',
+    'ios': 'siApple',
     'solidity': 'siSolidity',
     'truffle': 'siTruffle',
     'hardhat': 'siHardhat',
@@ -43,12 +52,22 @@ const StackIcon = ({ stack, size = 80, className = "" }) => {
     'ipfs': 'siIpfs',
     'polygon': 'siPolygon',
     'openai': 'siOpenai',
+    'chatgpt': 'siOpenai',
     'python': 'siPython',
     'tensorflow': 'siTensorflow',
     'pytorch': 'siPytorch',
     'langchain': 'siLangchain',
+    'rag-systems': null, // Custom icon needed
+    'lindy-ai': null, // Custom icon needed
+    'botpress': null, // Custom icon needed
+    'lovable': null, // Custom icon needed
     'n8n': 'siN8n',
     'zapier': 'siZapier',
+    'make': 'siMake',
+    'autodesk': 'siAutodesk',
+    'monday': 'siMondaydotcom',
+    'zoho': 'siZoho',
+    'ghl': null, // Custom icon needed
     'aws': null, // Not available in simple-icons, will use fallback
     'docker': 'siDocker',
     'kubernetes': 'siKubernetes',
@@ -59,6 +78,8 @@ const StackIcon = ({ stack, size = 80, className = "" }) => {
     'firebase': 'siFirebase',
     'graphql': 'siGraphql',
     'apollo': 'siApollographql',
+    'webrtc': 'siWebrtc',
+    'websockets': null, // Custom icon needed
     'stripe': 'siStripe',
     'paypal': 'siPaypal',
     'typescript': 'siTypescript',
@@ -67,9 +88,11 @@ const StackIcon = ({ stack, size = 80, className = "" }) => {
     'rust': 'siRust',
     'java': 'siJava',
     'php': 'siPhp',
+    'csharp': 'siCsharp',
     'jest': 'siJest',
     'cypress': 'siCypress',
-    'playwright': null // Not available in simple-icons, will use fallback
+    'playwright': null, // Not available in simple-icons, will use fallback
+    'puppeteer': null // Not available in simple-icons, will use fallback
   };
 
   const getIcon = () => {
@@ -126,6 +149,53 @@ const StackIcon = ({ stack, size = 80, className = "" }) => {
     'playwright': (
       <svg viewBox="0 0 24 24" width={size} height={size} className={className} xmlns="http://www.w3.org/2000/svg">
         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="#45BA4B"/>
+      </svg>
+    ),
+    'puppeteer': (
+      <svg viewBox="0 0 24 24" width={size} height={size} className={className} xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" fill="#40B5A4"/>
+      </svg>
+    ),
+    'websockets': (
+      <svg viewBox="0 0 24 24" width={size} height={size} className={className} xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-4h2v2h-2zm0-4h2v2h-2zm0-4h2v2h-2z" fill="#010101"/>
+      </svg>
+    ),
+    'rag-systems': (
+      <svg viewBox="0 0 24 24" width={size} height={size} className={className} xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#6366F1" strokeWidth="2" fill="none"/>
+      </svg>
+    ),
+    'lindy-ai': (
+      <svg viewBox="0 0 24 24" width={size} height={size} className={className} xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2L2 7l10 5 10-5-10-5z" fill="#8B5CF6"/>
+        <circle cx="12" cy="12" r="3" fill="#8B5CF6"/>
+      </svg>
+    ),
+    'botpress': (
+      <svg viewBox="0 0 24 24" width={size} height={size} className={className} xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="#20B2AA"/>
+      </svg>
+    ),
+    'lovable': (
+      <svg viewBox="0 0 24 24" width={size} height={size} className={className} xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="#FF6B6B"/>
+      </svg>
+    ),
+    'ghl': (
+      <svg viewBox="0 0 24 24" width={size} height={size} className={className} xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#00A4FF" strokeWidth="2" fill="none"/>
+        <circle cx="12" cy="12" r="2" fill="#00A4FF"/>
+      </svg>
+    ),
+    'crm': (
+      <svg viewBox="0 0 24 24" width={size} height={size} className={className} xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" fill="#4A90E2"/>
+      </svg>
+    ),
+    'ecommerce': (
+      <svg viewBox="0 0 24 24" width={size} height={size} className={className} xmlns="http://www.w3.org/2000/svg">
+        <path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L21.7 4H5.21l-.94-2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z" fill="#FF6B35"/>
       </svg>
     )
   };

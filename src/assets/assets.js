@@ -43,14 +43,15 @@ import tryring from './tryring.png'
 import myinfinite from './myinfinite.png'
 import pinecall from './pinecall.png'
 import stashbee from './stashbee.png'
-import gitwik from './gitwik.png'
 import golodger from './golodger.png'
-import globalvoicedirect from './globalvoicedirect.png'
-import accessexperts247 from './accessexperts247.png'
 import sportunity from './sportunity.png'
 import hotelspider from './hotel-spider.png'
 import isluxury from './isluxury.png'
 import pabau from './pabau.png'
+import utropia from './utropia.png'
+import rayls from './rayls.png'
+import decibel from './decibel.trade.png'
+import pushpurr from './pushpurr.png'
 
 
 export const company_logos = [
@@ -102,14 +103,15 @@ const assets = {
   myinfinite,
   pinecall,
   stashbee,
-  gitwik,
   golodger,
-  globalvoicedirect,
-  accessexperts247,
   sportunity,
   hotelspider,
   isluxury,
-  pabau
+  pabau,
+  utropia,
+  rayls,
+  decibel,
+  pushpurr
 }
 
 export default assets

@@ -159,7 +159,7 @@ const Navbar = ({theme, setTheme}) => {
           to="/stacks" 
           className={`hover:border-b-2 border-primary transition-all ${isStacksPage ? 'border-b-2 border-primary text-primary font-semibold' : ''}`}
         >
-          Stacks
+          Technologies
         </Link>
 
         {isHomePage ? (
@@ -265,7 +265,7 @@ const Navbar = ({theme, setTheme}) => {
               onClick={() => setSidebarOpen(false)}
               className={`text-lg font-semibold py-2 ${isStacksPage ? 'border-b-2 border-white' : ''}`}
             >
-              Stacks
+              Technologies
             </Link>
 
             {isHomePage ? (
@@ -324,7 +324,7 @@ const Navbar = ({theme, setTheme}) => {
             href="#contact-us" 
             className='hidden sm:flex items-center gap-2 bg-primary text-white px-6 py-2 rounded-full cursor-pointer hover:scale-105 transition-all shadow-lg'
           >
-            Connect <img src={assets.arrow_icon} width={14} alt="icon" />
+            Contact <img src={assets.arrow_icon} width={14} alt="icon" />
           </a>
         ) : (
           <Link 

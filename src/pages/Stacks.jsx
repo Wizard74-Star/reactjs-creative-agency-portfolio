@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "motion/react";
-import { Link } from "react-router-dom";
 import { stacks, stackCategories } from "../data/stacks";
 import StackIcon from "../components/StackIcon";
 import Title from "../components/Title";
@@ -111,29 +110,23 @@ const Stacks = ({ theme, setTheme }) => {
         {/* Stacks Grid */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full max-w-7xl">
           {filteredStacks.map((stack, index) => (
-            <Link key={stack.id} to={`/stacks/${stack.id}`}>
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-                className="bg-white dark:bg-gray-800 p-6 rounded-xl hover:shadow-xl transition-all cursor-pointer group border border-gray-200 dark:border-gray-700"
-              >
-                <div className="flex flex-col items-center text-center gap-4">
-                  <StackIcon stack={stack} size={80} />
-                  <div>
-                    <h3 className="text-xl font-semibold mb-2">{stack.name}</h3>
-                    <p className="text-sm opacity-70 leading-relaxed">
-                      {stack.description}
-                    </p>
-                  </div>
-                  <div className="mt-2">
-                    <span className="text-xs px-3 py-1 bg-primary/10 text-primary rounded-full">
-                      {stack.projects.length} Projects
-                    </span>
-                  </div>
+            <motion.div
+              key={stack.id}
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.05 }}
+              className="bg-white dark:bg-gray-800 p-6 rounded-xl hover:shadow-xl transition-all group border border-gray-200 dark:border-gray-700"
+            >
+              <div className="flex flex-col items-center text-center gap-4">
+                <StackIcon stack={stack} size={80} />
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">{stack.name}</h3>
+                  <p className="text-sm opacity-70 leading-relaxed">
+                    {stack.description}
+                  </p>
                 </div>
-              </motion.div>
-            </Link>
+              </div>
+            </motion.div>
           ))}
         </div>
 

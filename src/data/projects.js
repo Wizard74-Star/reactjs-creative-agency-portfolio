@@ -1,10 +1,9 @@
-// Project categories: Full-Stack, Web Application, Mobile App, Blockchain, AI Automation, AI Agent/Chatbot
+// Project categories: Full-Stack, Mobile App, Blockchain, AI Automation, AI Agent/Chatbot
 import assets from '../assets/assets';
 
 export const projectCategories = [
   'All Projects',
   'Full-Stack',
-  'Web Application',
   'Mobile App',
   'Blockchain',
   'AI Automation',
@@ -28,7 +27,7 @@ export const projects = [
     title: 'LoyalAI',
     description: 'Smart loyalty platform that consolidates bonus cards and rewards programs. Allows users to collect points from multiple partners, access exclusive offers, and redeem rewards seamlessly.',
     image: assets.loyalai,
-    category: 'Full-Stack',
+    category: ['Full-Stack', 'Mobile App'],
     stacks: ['React', 'Node.js', 'MongoDB', 'Mobile App', 'Payment Integration'],
     featured: true,
     url: 'https://www.loyal-app.com/home'
@@ -115,17 +114,6 @@ export const projects = [
     featured: false,
     url: 'https://pinecall.io/'
   },
-  {
-    id: 12,
-    title: 'Global Voice Direct',
-    description: 'Enterprise voice communication platform with AI-powered call routing and intelligent customer service automation. Provides advanced telephony solutions for businesses.',
-    image: assets.globalvoicedirect,
-    category: 'AI Agent / Chatbot',
-    stacks: ['React', 'Node.js', 'Voice AI', 'Telephony', 'AWS'],
-    featured: false,
-    url: 'https://www.globalvoicedirect.com/'
-  },
-
   // Full-Stack Projects
   {
     id: 13,
@@ -207,25 +195,44 @@ export const projects = [
     featured: false,
     url: 'https://isluxury.com/'
   },
-  // Web Application Projects
   {
-    id: 23,
-    title: 'GitWik',
-    description: 'Developer collaboration platform that combines Git repository management with wiki documentation. Enables teams to manage code and documentation in one unified platform.',
-    image: assets.gitwik,
-    category: 'Web Application',
-    stacks: ['React', 'Node.js', 'Git Integration', 'Markdown', 'PostgreSQL'],
+    id: 26,
+    title: 'Utropia',
+    description: 'Innovative platform designed to transform digital experiences. Utropia provides cutting-edge solutions for modern businesses seeking to enhance their online presence and user engagement.',
+    image: assets.utropia,
+    category: 'Full-Stack',
+    stacks: ['React', 'Node.js', 'PostgreSQL'],
     featured: false,
-    url: 'https://www.gitwik.com/'
+    url: 'https://utropia.io/'
   },
   {
-    id: 25,
-    title: 'Access Experts 247',
-    description: 'Expert consultation and access platform connecting users with industry professionals. Features booking, video conferencing, and payment processing for expert consultations.',
-    image: assets.accessexperts247,
-    category: 'Web Application',
-    stacks: ['React', 'Node.js', 'Video Conferencing', 'Payment Gateway', 'PostgreSQL'],
+    id: 27,
+    title: 'Rayls',
+    description: 'The blockchain for banks. Built to bring $100 trillion liquidity and 6 billion bank customers onchain. Rayls is a scalable private and public blockchain for financial institutions with native compliance, governance controls, and quantum-safe privacy preservation.',
+    image: assets.rayls,
+    category: 'Blockchain',
+    stacks: ['Blockchain', 'Smart Contracts', 'Privacy', 'Compliance'],
     featured: false,
-    url: 'https://accessexperts247.com/'
+    url: 'https://www.rayls.com/'
+  },
+  {
+    id: 28,
+    title: 'Decibel',
+    description: 'The trading engine for global markets and the onchain future. Decibel is a fully onchain trading platform built on Aptos, combining spot, perps, and vault-based strategies with cross-margin and multicollateral support for high-performance trading.',
+    image: assets.decibel,
+    category: 'Blockchain',
+    stacks: ['Blockchain', 'DeFi', 'Trading', 'Aptos'],
+    featured: false,
+    url: 'https://decibel.trade/'
+  },
+  {
+    id: 29,
+    title: 'PushPurr',
+    description: 'The couple\'s app that speaks the heart, even when you\'re silent. PushPurr helps couples connect through Purrs (pre-written emotional nudges), Promises (scheduled acts of love), Questions (expert-crafted conversation starters), and real-time notifications to stay close.',
+    image: assets.pushpurr,
+    category: 'Mobile App',
+    stacks: ['React Native', 'iOS', 'Node.js', 'Real-time Notifications'],
+    featured: false,
+    url: 'https://www.pushpurr.com/'
   }
 ];
