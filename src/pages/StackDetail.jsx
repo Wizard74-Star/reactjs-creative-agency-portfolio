@@ -115,26 +115,6 @@ const StackDetail = ({ theme, setTheme }) => {
                     className="w-full rounded-xl transition-transform duration-500 group-hover:scale-110" 
                     alt={project.title} 
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl">
-                    <div className="absolute bottom-0 left-0 right-0 p-4">
-                      <h3 className="text-white text-lg font-semibold mb-2">{project.title}</h3>
-                      <p className="text-white/90 text-sm mb-3">{project.description}</p>
-                      <div className="flex flex-wrap gap-2">
-                        {project.stacks.map((tech, idx) => (
-                          <span 
-                            key={idx}
-                            className={`px-2 py-1 text-white text-xs rounded ${
-                              tech === stack.name 
-                                ? 'bg-primary' 
-                                : 'bg-white/20'
-                            }`}
-                          >
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
                 </div>
                 <h3 className="mt-3 mb-2 text-lg font-semibold">{project.title}</h3>
                 <p className="text-sm opacity-60 w-5/6">{project.description}</p>

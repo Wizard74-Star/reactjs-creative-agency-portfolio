@@ -4,16 +4,6 @@ import assets from "../assets/assets";
 const Hero = () => {
   return (
     <div className="flex flex-col items-center gap-6 py-20 px-4 sm:px-12 lg:px-24 xl:px-40 text-center w-full overflow-hidden text-gray-700 dark:text-white">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.7 }}
-        viewport={{ once: false, margin: "-100px" }}
-
-        className="inline-flex items-center gap-2 border border-gray-300 p-1.5 pr-4 rounded-full">
-        <img className="w-20" src={assets.group_profile} alt="Group Profile" />
-        <p className="text-xs font-medium">Trusted by 100+ clients worldwide</p>
-      </motion.div>
       <motion.h1
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -6,7 +6,7 @@ export const stacks = [
     category: 'Frontend',
     description: 'A powerful JavaScript library for building interactive user interfaces. We use React to create component-based, reusable UI elements that deliver fast, responsive experiences across web and mobile platforms.',
     color: '#61DAFB',
-    projects: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+    projects: [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 18, 19, 20, 21, 23, 25]
   },
   {
     id: 'next',
@@ -64,7 +64,7 @@ export const stacks = [
     category: 'Frontend',
     description: 'Utility-first CSS framework for rapidly building custom user interfaces. Tailwind provides low-level utility classes to build complex designs without leaving HTML.',
     color: '#06B6D4',
-    projects: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+    projects: [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 18, 19, 20, 21, 23, 25]
   },
   {
     id: 'bootstrap',
@@ -98,7 +98,7 @@ export const stacks = [
     category: 'Backend',
     description: 'JavaScript runtime built on Chrome\'s V8 engine. We leverage Node.js to build scalable, high-performance server-side applications and APIs that power real-time features and microservices.',
     color: '#339933',
-    projects: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+    projects: [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 18, 19, 20, 21, 23, 25]
   },
   {
     id: 'express',
@@ -106,7 +106,7 @@ export const stacks = [
     category: 'Backend',
     description: 'Fast, minimalist web framework for Node.js. Express enables rapid API development with middleware support, routing, and seamless integration with databases and services.',
     color: '#000000',
-    projects: [3, 5, 14, 17, 19, 24]
+    projects: [3, 5, 14, 17, 19]
   },
   {
     id: 'nestjs',
@@ -164,7 +164,7 @@ export const stacks = [
     category: 'Database',
     description: 'NoSQL database for modern applications. MongoDB\'s flexible document model enables rapid development and scales seamlessly with your application\'s growth.',
     color: '#47A248',
-    projects: [3, 5, 14, 17, 19, 24]
+    projects: [3, 5, 14, 17, 19]
   },
   {
     id: 'postgresql',
@@ -172,7 +172,7 @@ export const stacks = [
     category: 'Database',
     description: 'Advanced open-source relational database. PostgreSQL provides ACID compliance, JSON support, and powerful querying capabilities for complex data requirements.',
     color: '#336791',
-    projects: [1, 2, 13, 15, 16, 18, 20, 21, 22, 23, 24, 25]
+    projects: [1, 2, 13, 15, 18, 20, 21, 23, 25]
   },
   {
     id: 'mysql',
@@ -272,7 +272,7 @@ export const stacks = [
     category: 'Blockchain',
     description: 'Development framework for Ethereum smart contracts. Truffle provides testing, compilation, and deployment tools that streamline blockchain development and ensure contract reliability.',
     color: '#3FE0C5',
-    projects: [16, 18]
+    projects: [18]
   },
   {
     id: 'hardhat',
@@ -288,7 +288,7 @@ export const stacks = [
     category: 'Blockchain',
     description: 'JavaScript library for interacting with Ethereum blockchain. Web3.js enables us to connect applications to blockchain networks, interact with smart contracts, and manage wallets.',
     color: '#F16822',
-    projects: [16, 19, 20]
+    projects: [19, 20]
   },
   {
     id: 'ethers',
@@ -330,7 +330,7 @@ export const stacks = [
     category: 'Language',
     description: 'Versatile programming language for AI, automation, and backend development. Python\'s extensive libraries make it ideal for machine learning, data processing, and API development.',
     color: '#3776AB',
-    projects: [1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+    projects: [1, 2, 4, 5, 7, 8, 9, 10, 11, 12]
   },
   {
     id: 'tensorflow',
@@ -364,7 +364,7 @@ export const stacks = [
     category: 'Automation',
     description: 'Workflow automation platform that connects APIs and services. We use n8n to create powerful automation workflows, integrate systems, and streamline business processes without code complexity.',
     color: '#FF6D5A',
-    projects: [1, 2, 3, 4, 5, 6, 7, 8]
+    projects: [1, 2, 3, 4, 5, 7, 8]
   },
   {
     id: 'zapier',
@@ -382,7 +382,7 @@ export const stacks = [
     category: 'Cloud',
     description: 'Amazon Web Services cloud computing platform. We leverage AWS for scalable infrastructure, storage, and services that power enterprise-grade applications.',
     color: '#FF9900',
-    projects: [1, 2, 6, 12, 16]
+    projects: [1, 2, 12]
   },
   {
     id: 'docker',
@@ -492,7 +492,7 @@ export const stacks = [
     category: 'Language',
     description: 'High-level programming language that is one of the core technologies of the World Wide Web. JavaScript enables interactive web pages and is essential for web development.',
     color: '#F7DF1E',
-    projects: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+    projects: [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 18, 19, 20, 21, 23, 25]
   },
   {
     id: 'go',

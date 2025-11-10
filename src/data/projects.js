@@ -25,13 +25,13 @@ export const projects = [
   },
   {
     id: 2,
-    title: 'Fiscal.ai',
-    description: 'Modern financial data platform providing accurate global financial data for public equities, ETFs, and funds. Features AI-powered research, KPI data, dashboards, data visualization, and robust APIs for institutional-quality financial analysis.',
-    image: assets.fiscalai,
-    category: 'AI Automation',
-    stacks: ['React', 'Node.js', 'Python', 'PostgreSQL', 'AWS', 'Data APIs'],
+    title: 'LoyalAI',
+    description: 'Smart loyalty platform that consolidates bonus cards and rewards programs. Allows users to collect points from multiple partners, access exclusive offers, and redeem rewards seamlessly.',
+    image: assets.loyalai,
+    category: 'Full-Stack',
+    stacks: ['React', 'Node.js', 'MongoDB', 'Mobile App', 'Payment Integration'],
     featured: true,
-    url: 'https://fiscal.ai/'
+    url: 'https://www.loyal-app.com/home'
   },
   {
     id: 3,
@@ -62,16 +62,6 @@ export const projects = [
     stacks: ['React', 'Node.js', 'OpenAI', 'Python', 'MongoDB'],
     featured: false,
     url: 'https://copysmith.ai/'
-  },
-  {
-    id: 6,
-    title: 'Gencraft',
-    description: 'AI-powered image generation platform that creates stunning visuals from text prompts. Enables users to generate, edit, and customize images using advanced AI technology for creative projects.',
-    image: assets.gencraft,
-    category: 'AI Automation',
-    stacks: ['React', 'Node.js', 'Python', 'AI Models', 'AWS'],
-    featured: false,
-    url: 'https://gencraft.com/'
   },
   {
     id: 7,
@@ -149,13 +139,13 @@ export const projects = [
   },
   {
     id: 14,
-    title: 'LoyalAI',
-    description: 'Smart loyalty platform that consolidates bonus cards and rewards programs. Allows users to collect points from multiple partners, access exclusive offers, and redeem rewards seamlessly.',
-    image: assets.loyalai,
-    category: 'Full-Stack',
-    stacks: ['React', 'Node.js', 'MongoDB', 'Mobile App', 'Payment Integration'],
+    title: 'Fiscal.ai',
+    description: 'Modern financial data platform providing accurate global financial data for public equities, ETFs, and funds. Features AI-powered research, KPI data, dashboards, data visualization, and robust APIs for institutional-quality financial analysis.',
+    image: assets.fiscalai,
+    category: 'AI Automation',
+    stacks: ['React', 'Node.js', 'Python', 'PostgreSQL', 'AWS', 'Data APIs'],
     featured: true,
-    url: 'https://www.loyal-app.com/home'
+    url: 'https://fiscal.ai/'
   },
   {
     id: 15,
@@ -166,16 +156,6 @@ export const projects = [
     stacks: ['React', 'Node.js', 'PostgreSQL', 'Stripe', 'Calendar Integration'],
     featured: true,
     url: 'https://www.pabau.com/'
-  },
-  {
-    id: 16,
-    title: 'Gluon ERP',
-    description: 'Enterprise Resource Planning platform designed to streamline business operations. Provides comprehensive business management tools for inventory, accounting, and operations.',
-    image: assets.gluonerp,
-    category: 'Full-Stack',
-    stacks: ['React', 'Node.js', 'PostgreSQL', 'ERP Systems', 'AWS'],
-    featured: false,
-    url: 'https://gluonerp.com/'
   },
   {
     id: 17,
@@ -227,17 +207,6 @@ export const projects = [
     featured: false,
     url: 'https://isluxury.com/'
   },
-  {
-    id: 22,
-    title: 'Knowland',
-    description: 'Event and meeting space intelligence platform for hotels and venues. Provides data analytics and insights for event planning and venue management.',
-    image: assets.knowland,
-    category: 'Full-Stack',
-    stacks: ['React', 'Node.js', 'PostgreSQL', 'Data Analytics', 'Maps Integration'],
-    featured: false,
-    url: 'https://www.knowland.com/'
-  },
-
   // Web Application Projects
   {
     id: 23,
@@ -248,16 +217,6 @@ export const projects = [
     stacks: ['React', 'Node.js', 'Git Integration', 'Markdown', 'PostgreSQL'],
     featured: false,
     url: 'https://www.gitwik.com/'
-  },
-  {
-    id: 24,
-    title: 'DocTyme',
-    description: 'Document management and collaboration platform. Features document sharing, version control, and team collaboration tools for efficient document workflows.',
-    image: assets.doctyme,
-    category: 'Web Application',
-    stacks: ['React', 'Node.js', 'File Storage', 'Version Control', 'MongoDB'],
-    featured: false,
-    url: 'https://doctyme.com/'
   },
   {
     id: 25,

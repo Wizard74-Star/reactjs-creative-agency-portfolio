@@ -324,27 +324,6 @@ const CategoryPage = ({ theme, setTheme }) => {
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="absolute bottom-0 left-0 right-0 p-6">
-                      <h3 className="text-white text-xl font-bold mb-2">{project.title}</h3>
-                      <p className="text-white/90 text-sm mb-4 line-clamp-2">{project.description}</p>
-                      <div className="flex flex-wrap gap-2">
-                        {project.stacks.slice(0, 3).map((tech, idx) => (
-                          <span
-                            key={idx}
-                            className="px-3 py-1 bg-white/20 backdrop-blur-sm text-white text-xs rounded-full"
-                          >
-                            {tech}
-                          </span>
-                        ))}
-                        {project.stacks.length > 3 && (
-                          <span className="px-3 py-1 bg-white/20 backdrop-blur-sm text-white text-xs rounded-full">
-                            +{project.stacks.length - 3}
-                          </span>
-                        )}
-                      </div>
-                    </div>
-                  </div>
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary transition-colors">

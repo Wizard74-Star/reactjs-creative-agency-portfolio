@@ -37,7 +37,6 @@ import fiscalai from './FiscalAI.png'
 import easysuite from './easysuite.png'
 import userlens from './UserLens.png'
 import xpectrum from './xpectrum.png'
-import gencraft from './Qencraft.png'
 import appmixer from './appmixer.png'
 import copysmith from './copysmith.png'
 import tryring from './tryring.png'
@@ -45,11 +44,8 @@ import myinfinite from './myinfinite.png'
 import pinecall from './pinecall.png'
 import stashbee from './stashbee.png'
 import gitwik from './gitwik.png'
-import gluonerp from './gluonerp.png'
 import golodger from './golodger.png'
 import globalvoicedirect from './globalvoicedirect.png'
-import knowland from './knowland.png'
-import doctyme from './doctyme.png'
 import accessexperts247 from './accessexperts247.png'
 import sportunity from './sportunity.png'
 import hotelspider from './hotel-spider.png'
@@ -100,7 +96,6 @@ const assets = {
   easysuite,
   userlens,
   xpectrum,
-  gencraft,
   appmixer,
   copysmith,
   tryring,
@@ -108,11 +103,8 @@ const assets = {
   pinecall,
   stashbee,
   gitwik,
-  gluonerp,
   golodger,
   globalvoicedirect,
-  knowland,
-  doctyme,
   accessexperts247,
   sportunity,
   hotelspider,

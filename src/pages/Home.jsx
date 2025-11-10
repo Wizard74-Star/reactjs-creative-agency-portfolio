@@ -1,13 +1,12 @@
 import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
-import ContactUs from "../components/ContactUs";
+import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Navbar from "../components/Navbar";
 import OurWork from "../components/OurWork";
 import Services from "../components/Services";
-import Teams from "../components/Teams";
 import TrustedBy from "../components/TrustedBy";
 
 const Home = ({ theme, setTheme }) => {
@@ -49,8 +48,7 @@ const Home = ({ theme, setTheme }) => {
       <Hero key={`hero-${location.pathname}`} />
       <Services key={`services-${location.pathname}`} />
       <OurWork key={`ourwork-${location.pathname}`} />
-      <Teams key={`teams-${location.pathname}`} />
-      <ContactUs key={`contact-${location.pathname}`} />
+      <Contact key={`contact-${location.pathname}`} />
       <Footer theme={theme} />
 
       {/* Custom cursor ring */}

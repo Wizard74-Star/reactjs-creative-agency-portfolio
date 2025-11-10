@@ -28,7 +28,7 @@ const Services = () => {
         {
             title: "Blockchain Solutions",
             description:
-                "We engineer secure blockchain applications, smart contracts, and DeFi platforms using Solidity, Truffle, and Web3 technologies.",
+                "We engineer secure blockchain applications & websites, smart contracts, and DeFi platforms using Solidity, Truffle, and Web3 technologies.",
             icon: assets.ads_icon,
         },
         {
