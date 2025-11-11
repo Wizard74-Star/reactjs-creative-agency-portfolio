@@ -17,7 +17,7 @@ export const projects = [
     title: 'SprintiQ',
     description: 'AI-native agile planning platform that transforms agile planning from hours to minutes. Features AI-powered story generation, smart sprint planning, backlog prioritization, and real-time collaboration with integrations for Jira, GitHub, and Slack.',
     image: assets.sprintiq,
-    category: 'AI Automation',
+    category: 'AI Agent / Chatbot',
     stacks: ['React', 'Node.js', 'Python', 'OpenAI', 'PostgreSQL', 'AWS'],
     featured: true,
     url: 'https://www.sprintiq.ai/'
