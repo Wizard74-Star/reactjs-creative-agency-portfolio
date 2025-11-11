@@ -8,6 +8,12 @@ import { encodeCategoryForURL } from "../utils/categoryUrl";
 const Services = () => {
     const serviceData = [
         {
+            title: "All Projects",
+            description:
+                "Explore our complete portfolio of innovative solutions across all categories. From web applications to mobile apps, blockchain solutions, and AI-powered systems — discover the full range of our work.",
+            icon: assets.ads_icon,
+        },
+        {
             title: "Full-Stack Development",
             description:
                 "We build complete, scalable applications from frontend to backend using React, Next.js, Vue, Node.js, and modern databases — delivering end-to-end solutions.",
@@ -71,6 +77,7 @@ const Services = () => {
             {/* Category Showcase */}
             <div className="mt-16 grid grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl">
                 {[
+                    { name: 'All Projects', icon: '✨', gradient: 'from-cyan-500 via-blue-500 to-indigo-600', path: '/projects' },
                     { name: 'Full-Stack', icon: '🚀', gradient: 'from-blue-600 via-purple-600 to-pink-600', path: '/category/Full-Stack' },
                     { name: 'Mobile App', icon: '📱', gradient: 'from-green-500 via-emerald-500 to-teal-600', path: '/category/Mobile App' },
                     { name: 'Blockchain', icon: '⛓️', gradient: 'from-yellow-500 via-orange-500 to-red-600', path: '/category/Blockchain' },
