@@ -55,10 +55,6 @@ const Navbar = ({theme, setTheme}) => {
       transition={{duration: 0.6, ease: 'easeOut'}}
       className="flex justify-between items-center px-4 sm:px-12 lg:px-24 py-4 sticky top-0 z-50 backdrop-blur-xl font-medium bg-white/50 dark:bg-gray-900/70 border-b border-gray-200/50 dark:border-gray-800/50"
     >
-      <Link to="/" onClick={() => setSidebarOpen(false)}>
-        <img src={theme === 'dark' ? assets.logo_dark : assets.logo} className='w-32 sm:w-40' alt="Logo" />
-      </Link>
-
       {/* Desktop Navigation */}
       <nav className="hidden sm:flex items-center gap-6 text-gray-700 dark:text-white text-sm">
         <Link 
